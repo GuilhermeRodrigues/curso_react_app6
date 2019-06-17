@@ -13,10 +13,10 @@ import OutrosJogos from './src/components/OutrosJogos';
 export default class app6 extends Component {
     render() {
         return (
-            <Router>
+            <Router sceneStyle={{ paddingTop: 50 }}>
                 <Scene key='principal' component={Principal} initil title="Cara ou coroa" />
-                <Scene key='sobreJogo' component={SobreJogo} />
-                <Scene key='outrosJogos' component={OutrosJogos} />
+                <Scene key='sobreJogo' component={SobreJogo} initil title="Sobre o jogo" />
+                <Scene key='outrosJogos' component={OutrosJogos} initil title="Outros jogos" />
             </Router>
 
         );
