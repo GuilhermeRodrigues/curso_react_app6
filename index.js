@@ -9,6 +9,7 @@ import { Router, Scene } from 'react-native-router-flux';
 import Principal from './src/components/Principal';
 import SobreJogo from './src/components/SobreJogo';
 import OutrosJogos from './src/components/OutrosJogos';
+import Resultado from './src/components/Resultado';
 
 export default class app6 extends Component {
     render() {
@@ -17,6 +18,7 @@ export default class app6 extends Component {
                 <Scene key='principal' component={Principal} initil title="Cara ou coroa" />
                 <Scene key='sobreJogo' component={SobreJogo} initil title="Sobre o jogo" />
                 <Scene key='outrosJogos' component={OutrosJogos} initil title="Outros jogos" />
+                <Scene key='resultado' component={Resultado} initil title="Resultado" />
             </Router>
 
         );
