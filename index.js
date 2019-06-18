@@ -4,23 +4,12 @@ import {
     AppRegistry
 } from 'react-native';
 
-import { Router, Scene } from 'react-native-router-flux';
-
-import Principal from './src/components/Principal';
-import SobreJogo from './src/components/SobreJogo';
-import OutrosJogos from './src/components/OutrosJogos';
-import Resultado from './src/components/Resultado';
+import Rotas from './src/Rotas';
 
 export default class app6 extends Component {
     render() {
         return (
-            <Router sceneStyle={{ paddingTop: 50 }}>
-                <Scene key='principal' component={Principal} initil title="Cara ou coroa" />
-                <Scene key='sobreJogo' component={SobreJogo} initil title="Sobre o jogo" />
-                <Scene key='outrosJogos' component={OutrosJogos} initil title="Outros jogos" />
-                <Scene key='resultado' component={Resultado} initil title="Resultado" />
-            </Router>
-
+            <Rotas />
         );
     }
 }

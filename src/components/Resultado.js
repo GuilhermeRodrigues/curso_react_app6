@@ -26,21 +26,19 @@ export default class Resultado extends Component {
     }
 
 	render() {
-
         if (this.state.resultado === 'cara') {
             return (
                 <View style={styles.resultado}>
                     <Image source={cara} />
                 </View>
             );
-        } else {
-            return (
-                <View style={styles.resultado}>
-                    <Image source={coroa} />
-                </View>
-            );
         }
-		
+
+        return (
+            <View style={styles.resultado}>
+                <Image source={coroa} />
+            </View>
+        );
 	}
 }
 

@@ -43,7 +43,6 @@ export default class Principal extends Component {
                     
                 </View>
             </View>
-
         );
     }
 }
